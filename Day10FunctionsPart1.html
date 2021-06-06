@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Parameterized and Non Parameterized function
+        Default value in parameter
+        Local Variable
+        Global Variable
+        */
+        function addNumber(x,y){
+            document.write(x+y);
+        }
+        function MultiplyNumber(a=5,b=6){
+            return a*b;
+        }
+        var result=MultiplyNumber();
+        document.write(result+10);
+        document.write("<br>");
+        addNumber(10,20);
+        document.write("<br>");
+        function getDiscount(lprice,sprice){
+            discount=(lprice-sprice)/lprice*100;
+            document.write(discount+"%");
+        }
+        getDiscount(400,200);
+        document.write("<br>");
+        function getCityName(){
+            var html='<select name="" id=""><option value="">Select City</option><option value="">Delhi</option><option value="">Mumbai</option><option value="">Hyderabad</option></select>';
+        document.write(html);
+        } 
+    </script>
+    <script>getCityName();</script>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat hic similique incidunt, labore suscipit molestias ea esse iusto praesentium obcaecati harum optio quas nobis. Cum, amet quaerat minus vitae aliquid hic modi enim dolorem vel sunt earum dignissimos, assumenda rerum et soluta iste sit aliquam molestias nam quisquam quibusdam maiores!</p>
+    <script>getCityName();</script>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat hic similique incidunt, labore suscipit molestias ea esse iusto praesentium obcaecati harum optio quas nobis. Cum, amet quaerat minus vitae aliquid hic modi enim dolorem vel sunt earum dignissimos, assumenda rerum et soluta iste sit aliquam molestias nam quisquam quibusdam maiores!</p>
+    <script>getCityName();</script>
+</body>
+</html>
