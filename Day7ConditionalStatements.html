@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        if
+        if-else
+        if=elseif-else
+        switch
+        if a variable is undefined than we use ?? to set avaue if variable is undefined
+        */
+       var result;
+       document.write(result ?? "Good");
+        var age=60;
+        var ticketprice=500;
+        var discount=200;
+        if(age<60){
+            document.write(`Ticket price is : ${ticketprice}`);
+        }else if(age>=60){
+            ticketprice=ticketprice-discount;
+            document.write(`Ticket price is : ${ticketprice}`);
+        }else{
+            document.write(`No Ticket Available`);
+        }
+
+        var day="monday";
+        switch(day){//switch(true){
+            case "monday":
+                document.write(`Today is monday`);
+            break;
+            case "tuesday":
+                document.write(`Today is tuesday`);
+            break;
+            case "wednesday":
+                document.write(`Today is wednesday`);
+            break;
+            case "thursday":
+                document.write(`Today is thursday`);
+            break;
+            case "friday":
+                document.write(`Today is friday`);
+            break;
+            case "saturday":
+                document.write(`Today is saturday`);
+            break;
+            case "sunday":
+                document.write(`Today is sunday`);
+            break;
+
+            default:
+                document.write(`Enter a valid day`);
+        }
+    </script>
+</body>
+</html>
