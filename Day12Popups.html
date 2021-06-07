@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            Alert Box
+            Confirm Box returns value in true and false
+            Prompt Box returns value in string
+            parseint convert string to integer
+        */
+       alert("Hello world");
+       var gender=confirm("Are you Male or Female");
+       if(gender==true){
+        document.write("Male");
+       }else{
+        document.write("Female");
+       }
+       var x=prompt("Number1",0);
+       var y=prompt("Number2",0);
+       if(x==null || x=="" || y==null || y==""){
+        document.write("Please provide a number");
+       }else{
+        x=parseInt(x);
+        y=parseInt(y);
+        document.write("Sum : "+(x+y));
+       }
+    </script>
+</body>
+</html>
