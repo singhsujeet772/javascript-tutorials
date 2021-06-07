@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var obj=new Object();
+        // obj.name="sujeet";
+        // obj.age="30";
+        var obj={
+            name:"sujeet",
+            age:"30",
+        }
+        obj.mobile=999;
+        delete obj.mobile;
+        obj.phone=777;
+        document.write(obj.mobile);
+        document.write("<br>");
+        document.write("<table border='1'>");
+        for(var key in obj){
+            document.write("<tr>");
+            document.write("<td>"+key+"</td>");
+            document.write("<td>"+key[obj]+"</td>");
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+</body>
+</html>
