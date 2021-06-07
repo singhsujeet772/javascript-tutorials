@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj={
+            fname:"sujeet",
+            lname:"singh",
+            age:20,
+            city:["meerut","delhi"],
+            edu:{
+                pg:"mtech",
+                ug:"btech"
+            },
+            fullname:function(){
+                document.write(this.fname+" "+this.lname);
+            }
+        }
+        document.write(obj.fname);
+        document.write("<br>");
+        document.write(obj.lname);
+        document.write("<br>");
+        document.write(obj.age);
+        document.write("<br>");
+        document.write(obj.city[0]);
+        document.write("<br>");
+        document.write(obj.city[1]);
+        document.write("<br>");
+        document.write(obj.edu.pg);
+        document.write("<br>");
+        document.write(obj.edu.ug);
+        document.write("<br>");
+        obj.fullname();
+    </script>
+</body>
+</html>
