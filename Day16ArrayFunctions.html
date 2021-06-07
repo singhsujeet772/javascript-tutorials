@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            length
+            length=0;
+            concat(arr)
+            pop()
+            shift()
+            push()
+            unshift()
+            splice(position,length)
+            indexOf()
+            Array.isArray()
+            split()
+            join()
+        */
+        var arr=["a","b"];
+        var arr1=["c","d"];
+        var arr2=["e","f"];
+        //arr=[];
+        //arr.length=0;
+        document.write(arr.length);
+        document.write(arr.concat(arr1,arr2));
+        document.write("<br>");
+        document.write(arr.push("r"));
+        document.write("<br>");
+        document.write(arr.unshift("q"));
+        document.write("<br>");
+        for(var i=0;i<4;i++){
+            document.write(arr[i]+" ");
+        }
+        document.write("<br>");
+        document.write(arr.pop());
+        document.write("<br>");
+        document.write(arr.shift());
+        document.write("<br>");
+        document.write(arr.length);
+        document.write("<br>");
+        for(var i=0;i<2;i++){
+            document.write(arr[i]+" ");
+        }
+        document.write(arr.indexOf("a"));
+        var str="My name is sujeet";
+        var result=str.split(" ");
+        console.log(result);
+        var reverse=result.join(" ");
+        document.write(reverse);
+        document.write("<br>");
+        var fname="sujeet singh";
+        var sfname=fname.split(" ");
+        document.write("welcome "+sfname[0]);
+
+    </script>
+</body>
+</html>
