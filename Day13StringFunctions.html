@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            name.length
+            name.search
+            name.indexOf
+            name.lastIndexOf
+            name.slice can take value in - with second parameter 
+            name.substring can not take value in - with second parameter
+            name.substr second parameter is how much we want
+            name.replace
+            name.toLowerCase
+            name.toUpperCase
+            name.trim
+            name.concat
+        */
+       var name="Programming with Vishal with Vishal";
+       document.write(name.length);
+       document.write("<br>");
+       document.write(name.search("Vishal"));
+       document.write("<br>");
+       document.write(name.indexOf("with"));
+       document.write("<br>");
+       document.write(name.lastIndexOf("with"));
+       document.write("<br>");
+       document.write(name.slice(-6));
+       document.write("<br>");
+       document.write(name.substring(12,16));
+       document.write("<br>");
+       document.write(name.substr(12,4));
+       document.write("<br>");
+       var name="Programming with Vishal";
+       var a=name.replace("Vishal","Amit");
+       document.write(a);
+       document.write("<br>");
+       document.write(name.toLowerCase());
+       document.write("<br>");
+       document.write(name.toUpperCase());
+       document.write("<br>");
+       document.write((name.trim()).length);
+       document.write("<br>");
+       document.write(name.concat(" ","Amit"));
+       document.write("<br>");
+       var html="Programming with %name%";
+       var result=html.replace("%name%","Anil");
+       document.write(result);
+    </script>
+</body>
+</html>
