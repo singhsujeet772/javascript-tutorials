@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function User(fn,ln){
+            this.fname=fn;
+            this.lname=ln;
+            this.fullName=function(){
+                return this.fname+" "+this.lname;
+            }
+        }
+        var obj1=new User("sujeet","singh");
+        var obj2=new User("Amit","singh");
+        document.write(obj1.fullName());
+        document.write(obj2.fullName());
+    </script>
+</body>
+</html>
